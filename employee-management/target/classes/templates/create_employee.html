@@ -1,0 +1,7 @@
+<form th:action="@{/saveEmployee}" th:object="${employee}" method="post">
+    Name: <input type="text" th:field="*{name}" /><br>
+    Department: <input type="text" th:field="*{department}" /><br>
+    Email: <input type="email" th:field="*{email}" /><br>
+    Salary: <input type="number" th:field="*{salary}" /><br>
+    <button type="submit">Save</button>
+</form>
